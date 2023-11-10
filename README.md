@@ -1,4 +1,4 @@
-<h1>SIEM (Security Information and Event Manager) - Azure Sentinel</h1>
+<h1>SIEM - Azure Sentinel</h1>
 
 <h2>Description</h2>
 In this SIEM project, I'll set up a free Azure subscription and then create a virtual machine with intentionally turned off firewalls to make it a tempting target for attackers. We will also manage logs in Azure's Log Analytics Workspace and use Azure Sentinel, Microsoft's SIEM, to map out attacker data. Additionally, I'll use PowerShell to extract and enrich IP address data for a deeper dive into cybersecurity threats.
