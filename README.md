@@ -21,3 +21,9 @@ The diagram below illustrates our lab where an intentionally exposed virtual mac
 <img src="https://imgur.com/beoyvSa.png" height="90%" width="90%" alt="High Level Overview"/>
 <br />
 <br />
+
+
+
+
+
+
