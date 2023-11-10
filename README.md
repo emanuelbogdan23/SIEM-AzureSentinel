@@ -7,13 +7,10 @@ In this SIEM project, I'll set up a free Azure subscription and then create a vi
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b></b>
-
-<h2>Environments Used </h2>
-
-- <b></b> 
-- <b></b>
+- <b>PowerShell</b>
+- <b>Microsoft Azure</b> 
+- <b>Azure Sentinel (SIEM)</b> 
+- <b>Log Analytics Workspace</b>
 
 <h2>Project walk-through:</h2>
 
