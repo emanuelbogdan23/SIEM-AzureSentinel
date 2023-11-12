@@ -68,6 +68,18 @@ This custom log setup enhances our analytical capabilities, contributing to a mo
 <br />
 
 
+<h3>Integration of Geospatial Data - Custom Log in Log Analytics Workspace</h3>
+<p>In the final step, the deployment of Azure Sentinel played a pivotal role in visualizing and comprehending the extensive attack data generated throughout the project. Azure Sentinel served as the Security Information and Event Management (SIEM) tool, offering a high-level overview of the global attack landscape. By connecting Azure Sentinel to the previously established Log Analytics Workspace, the platform aggregated and processed the influx of log data, facilitating a comprehensive understanding of the threat landscape. The findings were striking, with over 15,000 login attempts originating from various countries within a span of approximately 6 hours. Noteworthy contributors included Netherlands, Bulguria, South Korea, and the United States. The attacks predominantly targeted the Remote Desktop Protocol (RDP), emphasizing the importance of securing such entry points. This conclusive phase underscored the significance of a robust SIEM solution in distilling actionable insights from voluminous log data, ultimately enhancing the cybersecurity posture of the virtual environment.
+</p>
+<br />
+ <div align="center">
+    <img src="https://imgur.com/dn1QdSp.png" height="90%" width="90%" alt="Azure VM Set Up"/>
+  </div>
+<br />
+
+
+
+
 
 
 
