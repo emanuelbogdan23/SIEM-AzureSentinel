@@ -39,7 +39,6 @@ Creating the Log Analytics Workspace involved defining a space where these logs 
 
 <h3>Setting up Azure Sentinel</h3>
 <p>I proceeded to configure Azure Sentinel, our simulation tool for visualizing attack data. Azure Sentinel serves as a comprehensive security information and event management (SIEM) solution, offering a centralized platform for monitoring and responding to security threats. By connecting it to the Log Analytics Workspace, which aggregates logs from the virtual machine, including Windows event logs and custom logs with geographic information, Azure Sentinel enables us to analyze and visualize potential attacks in real-time. </p>
-<br />
 
 <h3>Powershell Script to Obtain Geo Data from Attackers</h3>
 <p>The next step involved running a script continuously to extract geographic data from potential attackers. This script operated in perpetuity, continuously scanning the security event log for failed login attempts (Event ID 4625). When it detected such events, it captured the IP address, queried a geo-data API, and generated a log file. This log file, located in the C:\ProgramData folder (which is hidden), contained both sample records for training and real failed login attempts.
@@ -77,6 +76,14 @@ This custom log setup enhances our analytical capabilities, contributing to a mo
   </div>
 <br />
 
+<h3>Key Learnings</h3>
+<ol>
+  <li><strong>Global Cyber Threat Landscape:</strong> The project vividly illustrated the global nature of cyber threats. The intentionally exposed virtual machine attracted attackers from diverse geographic locations, emphasizing the universal and persistent nature of cyber threats.</li>
+  <li><strong>Targeted Attack Vectors:</strong>The concentration of attacks on the Remote Desktop Protocol (RDP) highlighted the importance of securing specific entry points. Cyber adversaries often focus on exploiting vulnerabilities in widely used services, making it crucial to fortify and monitor such access points.</li>
+  <li><strong>Geospatial Data Insights:</strong> Extracting and enriching IP address data using PowerShell and integrating geospatial information into the Log Analytics Workspace enhanced the depth of threat analysis. Geographical insights into attack origins proved valuable for understanding the distribution and intensity of cyber threats.</li>
+  <li><strong>SIEM's Analytical Power:</strong> Azure Sentinel demonstrated its effectiveness as a Security Information and Event Management (SIEM) solution. By aggregating and visualizing log data, it provided a comprehensive overview of the attack landscape, showcasing the value of SIEM in monitoring and responding to security threats.</li>
+</ol>
+<br />
 
 
 
