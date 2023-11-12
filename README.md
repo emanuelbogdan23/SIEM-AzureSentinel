@@ -35,10 +35,11 @@ The diagram below illustrates our lab where an intentionally exposed virtual mac
 <p>Continuing with the Azure setup, the next step was to configure a Log Analytics Workspace. I used the Log Analytics Workspace section to ingest logs from the virtual machine, specifically focusing on collecting Windows event logs. The primary purpose of this workspace is to facilitate the storage and analysis of logs, including the creation of a custom log containing geographic information. This customization is crucial for tracking and identifying the origins of potential attackers.
 
 Creating the Log Analytics Workspace involved defining a space where these logs would be stored and processed. By ingesting Windows event logs and generating our custom log with geographic details, the workspace became a centralized hub for monitoring and analyzing the activities on the virtual machine.</p>
-
+<br />
 
 <h3>Setting up Azure Sentinel</h3>
 <p>I proceeded to configure Azure Sentinel, our simulation tool for visualizing attack data. Azure Sentinel serves as a comprehensive security information and event management (SIEM) solution, offering a centralized platform for monitoring and responding to security threats. By connecting it to the Log Analytics Workspace, which aggregates logs from the virtual machine, including Windows event logs and custom logs with geographic information, Azure Sentinel enables us to analyze and visualize potential attacks in real-time. </p>
+<br />
 
 <h3>Powershell Script to Obtain Geo Data from Attackers</h3>
 <p>The next step involved running a script continuously to extract geographic data from potential attackers. This script operated in perpetuity, continuously scanning the security event log for failed login attempts (Event ID 4625). When it detected such events, it captured the IP address, queried a geo-data API, and generated a log file. This log file, located in the C:\ProgramData folder (which is hidden), contained both sample records for training and real failed login attempts.
